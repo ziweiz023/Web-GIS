@@ -7,9 +7,9 @@
 
 
 .gradient-background {
-    background: linear-gradient(145deg, #f2e9e4, #f5ebe0, #cbc0d3 );
+    background: linear-gradient(167deg, #efd5c6, #bdbab7, #c2a1da );
     background-size: 180% 180%;
-    animation: gradient-animation 5s ease infinite;
+    animation: gradient-animation 7s ease infinite;
   }
   
 @keyframes gradient-animation {
@@ -61,14 +61,17 @@ body {
     margin: 0;
     padding: 20px;
     font-size: 90px;
-    font-family: "Brygada 1918", serif;
-    font-weight: 400;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 600;
     transition: background-color 0.6s ease-in-out;
-    text-shadow: 2px 2px 4px rgba(147, 147, 147, 0.6);
+    text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(196, 196, 196, 0.6),
+    2px 2px 4px rgba(103, 103, 103, 0.6);
 }
 
 
-.lightbulb-container {
+.slider-container {
     justify-items: center;  /* centers grid items horizontally */
     align-items: top;    /* centers grid items vertically */
     height: 100%;           /* full height of the parent */
@@ -140,10 +143,12 @@ h2 {
     font-size: 16px;
 }
 
-#lightbulb {
+#art {
     transition: stroke 0.5s ease-in-out;
     width: 100px;
     height: 100px;
-    filter: drop-shadow(2px 2px 4px rgba(135, 132, 132, 0.6));
+    filter:
+        drop-shadow(0 0 6px rgba(255, 255, 255, 0.8))
+        drop-shadow(2px 2px 6px rgba(42, 42, 42, 0.5));
 }
 
