@@ -3,44 +3,71 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Assignment 3</title>
+    <title>Final Project</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
 </head>
 
-<body class="gradient-background">
-
-    <h1>Understanding Climate Vulnerability of Delivery Drivers in NYC</h1>
-
-    <header class="d-flex justify-content-center py-2">
-        <div class="d-flex gap-3 justify-content-center py-3">
-            <button class="btn btn-success rounded-pill btn-md px-3" type="button">Climate Vulnerability Index</button>
-            <button class="btn btn-primary rounded-pill btn-md px-3" type="button">Flood Risk Index</button>
-            <button class="btn btn-danger rounded-pill btn-md px-3" type="button">Heat Risk Index</button>
-            <button class="btn btn-warning rounded-pill btn-md px-3" type="button">Infrastructure Access Index</button>
-            <button class="btn btn-secondary rounded-pill btn-md px-3" type="button">Methodology</button>
+<body >
+    <header class="pb-3 mb-4 border-bottom">
+      <div class="container">
+        <div class="d-flex align-items-center gap-3">
+            <img src="./image.png" height="90px" alt="logo" class="logo">
+          <h1 id='page-title' class="mb-0">Understanding Climate Vulnerability of Delivery Drivers in NYC</h1>
         </div>
+      </div>
     </header>
+
+    <div class="container py-4">
+
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3 text-start" id="CVI">
+            <div class="overlay-content">
+                <h1 class="display-5">Heat, Infrastructure, and Flood Risk</h1>
+                <p class="col-md-6 fs-5">Our Climate Vulnerability Index (CVI) for New York City synthesizes three critical spatial layers—average annual surface temperature to capture urban heat exposure, infrastructure site density to reflect resource access, and coastal & storm‑flooding predictions to assess flood risk—into a single composite map.  By combining and normalizing these factors at the neighborhood level, the CVI highlights the areas where environmental stresses and infrastructure gaps overlap, revealing where delivery workers and other outdoor laborers are most vulnerable.  Use this interactive map to identify priority zones for targeted improvements—such as cooling centers, safe rest areas, and flood‐resilient facilities—to strengthen community resilience and equity across boroughs.</p>
+                <a href="CVI.html" class="btn btn-primary btn-lg" type="button">Explore Map</a>
+            </div>
+        </div>
     
-    <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <div class="map"></div>
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-dark rounded-3">
+              <h2>Change the background</h2>
+              <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+              <button class="btn btn-outline-light" type="button">Flooding Risk</button>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+              <h2>Add borders</h2>
+              <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+              <button class="btn btn-outline-secondary" type="button">Example button</button>
             </div>
           </div>
         </div>
-      </div>
+    
+        <footer class="pt-3 mt-4 text-body-secondary border-top">
+          © 2025
+        </footer>
+    </div>  
 
 
+    <section id="testimonial">
+        <div class="my-5">
+          <div class="p-5 text-center bg-body-tertiary">
+            <div class="container py-5">
+              <h2 class="text-body-emphasis">"I no longer have to sniff other dogs for love. I've found the hottest Corgi on
+                TinDog. Woof."</h2>
+              <img class="profile-img mt-5" src="./images/dog-img.jpg" alt="dog image">
+              <p class="col-lg-8 mx-auto lead mt-2">
+                Pebbles, New York
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+    </section> 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
